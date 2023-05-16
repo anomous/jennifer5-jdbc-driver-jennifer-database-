@@ -1,3 +1,22 @@
+Jennifer JDBC Driver
+---
+
+Data can be retrieved using SQL by communicating with the API server that searches the Jennifer DB.  
+Supports standard ANSI SQL, allowing use of most SQL functions.
+
+#### How to query from the command line
+```shell
+java -jar jennifer-jdbc-{version}.jar -u jdbc:jennifer:{host}:{port};[dbName=default;dbType=data]
+```
+* version - driver version
+* host - API server address or IP
+* port - the port of the API server
+* dbName - DB name entered in API server setting (optional) - Default: default
+* dbType - DB type entered in API server settings (optional) - Default: data (view or data)
+{###################################################################################################}
+
+Korean language:
+
 제니퍼 JDBC 드라이버
 ---
 
@@ -13,3 +32,4 @@ java -jar jennifer-jdbc-{version}.jar -u jdbc:jennifer:{host}:{port};[dbName=def
 * port - API 서버의 포트
 * dbName - API 서버 설정에 입력한 디비의 이름 (optional) - 기본: default
 * dbType - API 서버 설정에 입력한 디비의 타입 (optional) - 기본: data (view or data)
+{###################################################################################################}
